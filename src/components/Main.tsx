@@ -36,7 +36,7 @@ export default function Main() {
           placeholder='Shorten a link here'
           className='border rounded-lg py-2 w-11/12'
         />
-        <button className='bg-primary rounded-lg py-2 w-11/12'>
+        <button className='bg-primary rounded-lg py-2 w-11/12 font-bold'>
           Shorten It!
         </button>
       </div>
