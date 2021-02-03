@@ -1,7 +1,7 @@
 import React from "react";
-import STAT from '../assets/icon-brand-recognition.svg';
-import COUNT from '../assets/icon-detailed-records.svg';
-import PAINT from '../assets/icon-fully-customizable.svg';
+import STAT from "../assets/icon-brand-recognition.svg";
+import COUNT from "../assets/icon-detailed-records.svg";
+import PAINT from "../assets/icon-fully-customizable.svg";
 
 export default function Main() {
   const statData = [
@@ -36,7 +36,7 @@ export default function Main() {
           placeholder='Shorten a link here'
           className='border rounded-lg py-2 w-11/12'
         />
-        <button className='bg-primary rounded-lg py-2 w-11/12 font-bold'>
+        <button className='bg-primary rounded-lg py-2 w-11/12 font-bold text-white'>
           Shorten It!
         </button>
       </div>
@@ -48,13 +48,22 @@ export default function Main() {
         </p>
       </div>
       <div className='mt-8 mx-4 text-center'>
-          {statData.map(item => {
-              return <div key={item.id} className='flex flex-col justify-center items-center space-y-4 mt-4'>
-                    <img src={item.url} alt="" className='border rounded-full py-2 px-2 bg-blue-500'/>
-                    <h2>{item.title}</h2>
-                    <p>{item.text}</p>
-              </div>
-          })}
+        {statData.map((item) => {
+          return (
+            <div
+              key={item.id}
+              className='flex flex-col justify-center items-center space-y-4 mt-4'
+            >
+              <img
+                src={item.url}
+                alt=''
+                className='border rounded-full py-2 px-2 bg-third'
+              />
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

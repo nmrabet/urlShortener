@@ -14,7 +14,7 @@ export default function Footer() {
           Get Started
         </button>
       </div>
-      <div className='flex flex-col justify-center items-center text-center py-12 space-y-8'>
+      <div className='bg-fourth flex flex-col justify-center items-center text-text text-center py-12 space-y-8'>
         <img src={Logo} alt='' />
         <div>
           <h3 className='font-bold pb-4'>Features</h3>
